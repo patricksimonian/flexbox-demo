@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn Flexbox</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="flex.css">
+  </head>
+  <body>
+    <div class="toggle-panel" id="panel-1" data-for="#flex1">
+      <h1 class="toggle-title">Flex Container 1</h1>
+      <div class="flex-options">
+        <h2>Flex Direction</h2>
+        <div class="option-group">
+          <label for="fd-row1">Row</label>
+          <input id="fd-row1" type="radio" name="1-flex-direction" value="row" checked>
+        </div>
+        <div class="option-group">
+          <label for="fd-col1">Column</label>
+          <input id="fd-col1" type="radio" name="1-flex-direction" value="column">
+        </div>
+      </div>
+      <div class="flex-options">
+        <h2>Align Items</h2>
+        <div class="option-group">
+          <label for="ai-fs1">Flex Start</label>
+          <input id="ai-fs1" type="radio" name="1-align-items"  value="flex-start" checked>
+        </div>
+        <div class="option-group">
+          <label for="ai-c1">Center</label>
+          <input id="ai-c1" type="radio" name="1-align-items" value="center">
+        </div>
+        <div class="option-group">
+          <label for="ai-fe1">Flex End</label>
+          <input id="ai-fe1" type="radio" name="1-align-items" value="flex-end">
+        </div>
+      </div>
+      <div class="flex-options">
+        <h2>Justify Content</h2>
+        <div class="option-group">
+          <label for="jc-fs1">Flex Start</label>
+          <input id="jc-fs1" type="radio" name="1-justify-content"  value="flex-start" checked>
+        </div>
+        <div class="option-group">
+          <label for="jc-c1">Center</label>
+          <input id="jc-c1" type="radio" name="1-justify-content" value="center">
+        </div>
+        <div class="option-group">
+          <label for="jc-fe1">Flex End</label>
+          <input id="jc-fe1" type="radio" name="1-justify-content" value="flex-end">
+        </div>
+        <div class="option-group">
+          <label for="jc-sb1">Space Between</label>
+          <input id="jc-sb1" type="radio" name="1-justify-content" value="space-between">
+        </div>
+        <div class="option-group">
+          <label for="jc-sa1">Space Around</label>
+          <input id="jc-sa1" type="radio" name="1-justify-content" value="space-around">
+        </div>
+      </div>
+    </div>
+
+    <div class="toggle-panel" id="panel-2" data-for="#flex2">
+      <h1 class="toggle-title">Flex Container 2</h1>
+      <div class="flex-options">
+        <h2>Flex Direction</h2>
+        <div class="option-group">
+          <label for="fd-row2">Row</label>
+          <input id="fd-row2" type="radio" name="2-flex-direction" value="row" checked>
+        </div>
+        <div class="option-group">
+          <label for="fd-col2">Column</label>
+          <input id="fd-col2" type="radio" name="2-flex-direction" value="column">
+        </div>
+      </div>
+      <div class="flex-options">
+        <h2>Align Items</h2>
+        <div class="option-group">
+          <label for="ai-fs2">Flex Start</label>
+          <input id="ai-fs2" type="radio" name="2-align-items"  value="flex-start" checked>
+        </div>
+        <div class="option-group">
+          <label for="ai-c2">Center</label>
+          <input id="ai-c2" type="radio" name="2-align-items" value="center">
+        </div>
+        <div class="option-group">
+          <label for="ai-fe2">Flex End</label>
+          <input id="ai-fe2" type="radio" name="2-align-items" value="flex-end">
+        </div>
+      </div>
+      <div class="flex-options">
+        <h2>Justify Content</h2>
+        <div class="option-group">
+          <label for="jc-fs2">Flex Start</label>
+          <input id="jc-fs2" type="radio" name="2-justify-content"  value="flex-start" checked>
+        </div>
+        <div class="option-group">
+          <label for="jc-c2">Center</label>
+          <input id="jc-c2" type="radio" name="2-justify-content" value="center">
+        </div>
+        <div class="option-group">
+          <label for="jc-fe2">Flex End</label>
+          <input id="jc-fe2" type="radio" name="2-justify-content" value="flex-end">
+        </div>
+        <div class="option-group">
+          <label for="jc-sb2">Space Between</label>
+          <input id="jc-sb2" type="radio" name="2-justify-content" value="space-between">
+        </div>
+        <div class="option-group">
+          <label for="jc-sa2">Space Around</label>
+          <input id="jc-sa2" type="radio" name="2-justify-content" value="space-around">
+        </div>
+      </div>
+    </div>
+    <div class="toggle-panel" data-for="#flex1">
+
+    </div>
+    <main>
+      <div class="flex-container" id="flex1" data-name="flex-container-1">
+        <div data-n="1" class="flex-child">
+          <div class="tracer column"></div>
+          <div class="tracer row"></div>
+        </div>
+        <div data-n="2" class="flex-child"></div>
+        <div data-n="3" class="flex-child"></div>
+        <div data-n="4" class="flex-child"></div>
+      </div>
+      <div class="flex-container" id="flex2" data-name="flex-container-2">
+        <div data-n="1" class="flex-child">
+          <div class="tracer column"></div>
+          <div class="tracer row"></div>
+        </div>
+        <div data-n="2" class="flex-child"></div>
+        <div data-n="3" class="flex-child"></div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="flex.js"></script>
+  </body>
+</html>
